@@ -18,14 +18,8 @@ namespace GraFizzBuzz
                 try
                 {
                     int number = GetIntInputOrExit();
-                    if (number % 3 == 0)
-                    {
-
-                    }
-                    else if (number % 5)
-                    {
-                        
-                    }
+                    FizzBuzz obj1 = new FizzBuzz(number);
+                    Console.WriteLine($"{obj1.Process()}");
                 }
                 catch (Exception ex)
                 {
